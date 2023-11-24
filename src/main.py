@@ -1,5 +1,8 @@
+from jatek_letrehozasa import *
+from fogadas import *
+
 def mainMenu():
-    print(
+    firstChoose = int(input(
         '''
         Üdvözlünk a fogadás oldalon!
 
@@ -12,8 +15,10 @@ def mainMenu():
         5 -- Kilépés
         
         '''
-    )
-    mainChosenInput = int(input(">>"))
-
+    ))
+    if firstChoose == 1:
+        letrehozas()
+    if firstChoose == 2:
+        fogadasLeadasa()
 
 mainMenu()

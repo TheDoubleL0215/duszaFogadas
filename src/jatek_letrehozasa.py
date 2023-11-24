@@ -1,7 +1,7 @@
 import os.path
 def letrehozas():
     path = 'txt/jatekok.txt'
-
+    # Megvizsgáljuk, hogy létre van-e hozva a fájl
     check_file = os.path.isfile(path)
     
     if check_file:
@@ -22,7 +22,7 @@ def letrehozas():
     alanyok_szama = alanyok.count(",")+1
     esemenyek_szama = esemenyek.count(",")+1
 
-    file.write(szervezo+";"+jatek+";"+str(alanyok_szama)+";"+str(esemenyek_szama)+"\n")
+    file.write("\n"+szervezo+";"+jatek+";"+str(alanyok_szama)+";"+str(esemenyek_szama)+"\n")
 
     for i in range(alanyok_szama):
         alanyok_list.append(alanyok.split(",")[i])
@@ -32,5 +32,3 @@ def letrehozas():
         esemenyek_list.append(esemenyek.split(",")[i])
         file.write(esemenyek.split(",")[i]+"\n")
     file.write("$")
-
-letrehozas()

@@ -1,5 +1,6 @@
 from jatek_letrehozasa import *
 from fogadas import *
+from jatek_lezaras import *
 
 def mainMenu():
     firstChoose = int(input(
@@ -20,5 +21,7 @@ def mainMenu():
         letrehozas()
     if firstChoose == 2:
         fogadasLeadasa()
+    if firstChoose == 3:
+        lezaras()
 
 mainMenu()

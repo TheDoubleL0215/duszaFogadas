@@ -31,5 +31,6 @@ def letrehozas():
     for i in range(esemenyek_szama):
         esemenyek_list.append(esemenyek.split(",")[i])
         file.write(esemenyek.split(",")[i]+"\n")
+    file.write("$")
 
 letrehozas()

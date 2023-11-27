@@ -23,5 +23,8 @@ def mainMenu():
         fogadasLeadasa()
     if firstChoose == 3:
         lezaras()
+    if firstChoose == 5:
+        print("Viszlát")
+    
 
 mainMenu()

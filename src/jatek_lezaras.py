@@ -37,6 +37,3 @@ def lezaras():
                         if felosztas4[1] == jatek:
                             
                             file.write(szervezo+";"+felosztas4[4]+";"+felosztas4[5])
-
-
-lezaras()

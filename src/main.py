@@ -26,5 +26,5 @@ def mainMenu():
     if firstChoose == 5:
         print("Viszlát")
     
-
-mainMenu()
+while True:
+    mainMenu()

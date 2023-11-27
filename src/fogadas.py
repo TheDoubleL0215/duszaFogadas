@@ -155,7 +155,7 @@ def fogadasLeadasa():
                     result = input("Eredmény >> ")
 
 
-                    fogadasFile.write(f"\n{fogadoNeve};{inChosenGameName};{userchoseBet};{inChosenGameAlanys[userChoseAlany-1]};{inChosenGameAlanys[userChoseEvent-1]};{result}")
+                    fogadasFile.write(f"\n"+str(fogadoNeve)+";"+str(inChosenGameName)+";"+str(userchoseBet)+";"+str(inChosenGameAlanys[userChoseAlany-1])+";"+str(inChosenGameAlanys[userChoseEvent-1])+";"+str(result))
 
                     notValidChose = False
 

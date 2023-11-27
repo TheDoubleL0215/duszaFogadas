@@ -2,3 +2,5 @@ Kovács Imre;Lajos és Bettina programjának futása;10;Lajos;programfutásának
 Kovács Imre;Lajos és Bettina programjának futása;23;Lajos;programjának kimenete;Hello World
 Oláh Margit;Lajos és Bettina programjának futása;20;Lajos;programfutásánaksebessége;8
 Miklós Gyula;Territorial;20;Imi;Levente;1
+Akárki;test;25;asd;asd;1
+Miklós Gyula;Spenót...;40;Sültkrumpli;Sültkrumpli;1

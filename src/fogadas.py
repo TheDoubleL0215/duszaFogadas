@@ -9,10 +9,10 @@ def fogadasLeadasa():
 
     #Main
     aktivSzavazasok = []
-    print(fogadasok)
+    #print(fogadasok)
 
     for line in fogadasok:
-        print(f"Ez a line: {line}")
+        #print(f"Ez a line: {line}")
         fogado_neve = line.split(';')[0]
         listedPersons.append(fogado_neve)
         fogado_jatek_nev = line.split(';')[1]
@@ -31,7 +31,7 @@ def fogadasLeadasa():
         }
         allPersonCredential.append(betPerson)
 
-    print(f"Ez az allperson",allPersonCredential)
+    #print(f"Ez az allperson",allPersonCredential)
 
     #Load jatekok
     jatekokFile = open("txt/jatekok.txt", "r+", encoding='utf-8')
@@ -41,7 +41,7 @@ def fogadasLeadasa():
     # Az összes sor lekérése
     for x in jatekok:
         allLines.append(x)
-    print("EZ AZ ALL LINE: ", allLines)
+    #print("EZ AZ ALL LINE: ", allLines)
 
     # Információs sor lekérése
     for sor in jatekok:
@@ -62,7 +62,7 @@ def fogadasLeadasa():
                 tempAlanyCounter += 1
             for y in range(esemSzam):
                 elemIndiNevId = allLines.index(sor) + 1 + tempAlanyCounter
-                print(elemIndiNevId)
+                #print(elemIndiNevId)
                 elemIndiNev = allLines[elemIndiNevId].replace("\n", "")
                 elemIndiNevList.append(elemIndiNev)
                 tempAlanyCounter += 1
@@ -78,8 +78,8 @@ def fogadasLeadasa():
 
             allGameDetails.append(jsonjatek)
 
-    print("Ez a info ", informationLines)
-    print("Van Isten! ", allGameDetails)
+    #print("Ez a info ", informationLines)
+    #print("Van Isten! ", allGameDetails)
 
     # User auth
     validateName = True
